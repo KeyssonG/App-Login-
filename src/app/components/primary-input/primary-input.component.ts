@@ -14,6 +14,6 @@ type InputTypes = "text" | "email" | "password"
 })
 export class PrimaryInputComponent {
   @Input() type: InputTypes = "text";
-  @Input() formName: String = "";
-  @Input() placeholder: String = "";
+  @Input() formName: string = "";
+  @Input() placeholder: string = "";
 }
