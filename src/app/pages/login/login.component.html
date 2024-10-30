@@ -4,8 +4,24 @@ primaryBtnText ="Entrar agora"
 secondaryBtnText="inscreva-se agora"
 >
     <form [formGroup]="loginForm">
-        <app-primary-input>
+        <app-primary-input
+        formControlName="email"
+        inputName="email"
+        type="email"
+        label="Email"
+        placeholder="example@gmail.com"
+        >
             <img src="/assets/svg/email-icon.svg"/>
         </app-primary-input>
+
+        <app-primary-input
+        formControlName="password"
+        inputName="password"
+        type="password"
+        label="Sua senha"
+        >
+            <img src="/assets/svg/password-icon.svg"/>
+        </app-primary-input>
+        <span>Esqueceu a senha?</span>
     </form>
 </app-default-login-layout>
